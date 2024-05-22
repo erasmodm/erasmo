@@ -5,8 +5,8 @@ from os.path import abspath, dirname
 sys.path.insert(0, dirname(dirname(dirname(abspath(__file__)))))
 
 
-from api_excercise.api_excercise.check_bigquery_table import check_table_exists
-from api_excercise.api_excercise.check_cloud_storage import check_bucket_file
+from api_excercise.check_bigquery_table import check_table_exists
+from api_excercise.check_cloud_storage import check_bucket_file
 
 class TestCheckBigQueryTable(unittest.TestCase):
     @patch("google.cloud.bigquery.Client")
